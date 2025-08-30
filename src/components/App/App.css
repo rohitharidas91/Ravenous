@@ -1,7 +1,9 @@
 #root {
   text-align: center;
   width: 100%;
-  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 p {
@@ -17,4 +19,23 @@ p {
   font-family: 'Permanent Marker', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   color: #123458;
   font-size: 3em;
+}
+
+footer {
+  margin-top: auto;
+  padding: 1rem;
+  background-color: #123458;
+  color: white;
+  font-family: 'Lexend', sans-serif;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #FFBF78;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+footer a:hover {
+  color: #ffd19c;
 }

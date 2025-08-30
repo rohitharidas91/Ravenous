@@ -8,14 +8,17 @@
 }
 
 .sortOptions {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 2em 0;
     margin: auto;
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 40vw;
+    min-width: max-content;
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
     border-radius: 5px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
 }
 
 .sortOptions button {
@@ -23,7 +26,6 @@
     background: none;
     border: none;
     color: white;
-    text-decoration: underline;
     font-family: 'Lexend', sans-serif;
     font-size: 1.2em;
     transition: 0.1s ease-in-out;
@@ -32,6 +34,12 @@
 .sortOptions button:hover {
     color: #ddd;
     scale: 1.2;
+}
+
+.sortOptions button.active {
+    color: #FFBF78;
+    text-decoration: underline;
+    font-weight: 600;
 }
 
 .searchInputs input{
@@ -67,7 +75,3 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
-.searchButton button:active {
-    transform: translateY(0);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
