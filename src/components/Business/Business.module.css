@@ -1,5 +1,5 @@
 .container {
-    background: grey;
+    background: #ddd;
     width: 270px;
     height: 350px;
     display: flex;
@@ -28,11 +28,9 @@
 .address {
     width: 60%;
     text-align: left;
-    background-color: red;
 }
 
 .rating {
     width: 40%;
     text-align: right;
-    background-color: yellow;
 }
