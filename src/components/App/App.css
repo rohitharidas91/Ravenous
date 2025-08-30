@@ -7,3 +7,14 @@
 p {
   margin: 0;
 }
+
+.banner {
+  width: 100%;
+  background-color: #FFBF78;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Permanent Marker', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #123458;
+  font-size: 3em;
+}

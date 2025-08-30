@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import BusinessList from '../BusinessList/BusinessList';
+import SearchBar from '../SearchBar/SearchBar';
 
 function App() {
 
@@ -43,6 +44,8 @@ function App() {
 
   return (
     <>
+      <h1 className='banner'>ravenous</h1>
+      <SearchBar />
       <BusinessList 
         businesses={businesses}
       />

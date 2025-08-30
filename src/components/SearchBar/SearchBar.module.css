@@ -1,0 +1,73 @@
+.SearchBar {
+    background-image: url('./background_search_desktop.jpg');
+    background-size:cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+}
+
+.sortOptions {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border-radius: 5px;
+}
+
+.sortOptions button {
+    margin: 0.5em 5%;
+    background: none;
+    border: none;
+    color: white;
+    text-decoration: underline;
+    font-family: 'Lexend', sans-serif;
+    font-size: 1.2em;
+    transition: 0.1s ease-in-out;
+}
+
+.sortOptions button:hover {
+    color: #ddd;
+    scale: 1.2;
+}
+
+.searchInputs input{
+    height: 2em;
+    width: 20em;
+    font-family: 'Lexend', sans-serif;
+    border-radius: 5px;
+    border: 2px #123458 solid;
+    margin: 1em;
+    font-size: 1.2em;
+    padding: 0 0.5em;
+}
+
+.searchButton button {
+    background-color: #123458;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.8em 2em;
+    font-family: 'Lexend', sans-serif;
+    font-size: 1.2em;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.searchButton button:hover {
+    background-color: #1a4a8f;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.searchButton button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
