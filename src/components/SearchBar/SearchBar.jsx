@@ -41,13 +41,16 @@ function SearchBar(props) {
             <div className={styles.searchButton}>
                 <button
                     onClick={() => {
-                        const searchParams = {
+                        props.setQuery({
                             search: props.search,
                             location: props.location,
                             sortBy: props.sortBy
-                        };
-                        props.setQuery(searchParams);
-                        alert(`Searching for ${searchParams.search} in ${searchParams.location} by ${searchParams.sortBy}`);
+                        });
+                        console.log('Current query:', {
+                            search: props.search,
+                            location: props.location,
+                            sortBy: props.sortBy
+                        });
                     }}
                 >Let's Go</button>
             </div>

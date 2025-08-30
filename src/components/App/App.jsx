@@ -78,7 +78,11 @@ function App() {
   const [search, setSearch] = useState('');
   const [location, setLocation] = useState('');
   const [sortBy, setSortBy] = useState('best_match');
-  const [query, setQuery] = useState('')
+  const [query, setQuery] = useState({
+    search: '',
+    location: '',
+    sortBy: '',
+  })
 
   return (
     <>
